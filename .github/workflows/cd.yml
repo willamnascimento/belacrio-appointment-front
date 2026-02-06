@@ -24,9 +24,9 @@ jobs:
     - name: build image and push to docker hub
       uses: docker/build-push-action@v1.1.0
       with:
-        username: williambr2022
+        username: danwebsoftwares/
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: williambr2022/demo-appointment-agenda-front
+        repository: williambr2022/belacrio-appointment-front
         tags: ${{ github.sha }}, latest
 
   
